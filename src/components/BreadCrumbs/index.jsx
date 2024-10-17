@@ -1,14 +1,17 @@
 "use client";
 import "./index.css";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
+///import Link from "next/link";
+///import { usePathname } from "next/navigation";
+///import { useTranslations } from "next-intl";
+export default function Breadcrumbs() {
+	<p>sss</p>;
+}
 
+/*
 export default function Breadcrumbs({ getcontent, sendt }) {
 	const pathname = usePathname();
 	const z = useTranslations("HomePage");
 	const p = useTranslations("Header");
-
 	// Розбиваємо шлях на частини
 	const pathParts = pathname.split("/").filter(Boolean);
 
@@ -19,7 +22,7 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 	}
 
 	// Назва головної сторінки
-	const homeLabel = z("mainh1") || "Home"; // Додано запасний варіант для перекладу
+	const homeLabel = z("mainh1");
 
 	// Генеруємо масив хлібних крихт
 	const breadcrumbs = [
@@ -30,11 +33,11 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 			// Перевіряємо, чи частина шляху відповідає ключу в перекладі
 			let label;
 			if (part === "blog") {
-				label = p("menu6") || "Blog"; // Додано запасний варіант
+				label = p("menu6"); // Використовуємо переклад для блогу
 			} else if (part === "girls") {
-				label = p("menu7") || "Girls"; // Додано запасний варіант
+				label = p("menu7");
 			} else if (index === pathParts.length - 1) {
-				label = sendt || part; // Останній елемент замінюємо на значення sendt або залишаємо частину шляху
+				label = sendt; // Останній елемент замінюємо на значення sendt
 			} else {
 				label = typeof getcontent === "function" ? getcontent(part) : part;
 			}
@@ -49,11 +52,12 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 				{breadcrumbs.map((crumb, index) => (
 					<li key={index} className='breadcrumb-item'>
 						<Link href={crumb.href}>{crumb.label}</Link>
-						{/* Додаємо роздільник, крім останнього елементу */}
-						{index < breadcrumbs.length - 1 && " > "}
+					
+						{index < breadcrumbs.length - 1}
 					</li>
 				))}
 			</ol>
 		</nav>
 	);
 }
+*/
