@@ -8,6 +8,7 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 	const pathname = usePathname();
 	const z = useTranslations("HomePage");
 	const p = useTranslations("Header");
+
 	// Розбиваємо шлях на частини
 	const pathParts = pathname.split("/").filter(Boolean);
 
@@ -18,7 +19,7 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 	}
 
 	// Назва головної сторінки
-	const homeLabel = z("mainh1");
+	const homeLabel = z("mainh1") || "Home"; // Додано запасний варіант для перекладу
 
 	// Генеруємо масив хлібних крихт
 	const breadcrumbs = [
@@ -29,11 +30,11 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 			// Перевіряємо, чи частина шляху відповідає ключу в перекладі
 			let label;
 			if (part === "blog") {
-				label = p("menu6"); // Використовуємо переклад для блогу
+				label = p("menu6") || "Blog"; // Додано запасний варіант
 			} else if (part === "girls") {
-				label = p("menu7");
+				label = p("menu7") || "Girls"; // Додано запасний варіант
 			} else if (index === pathParts.length - 1) {
-				label = sendt; // Останній елемент замінюємо на значення sendt
+				label = sendt || part; // Останній елемент замінюємо на значення sendt або залишаємо частину шляху
 			} else {
 				label = typeof getcontent === "function" ? getcontent(part) : part;
 			}
@@ -49,7 +50,7 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 					<li key={index} className='breadcrumb-item'>
 						<Link href={crumb.href}>{crumb.label}</Link>
 						{/* Додаємо роздільник, крім останнього елементу */}
-						{index < breadcrumbs.length - 1}
+						{index < breadcrumbs.length - 1 && " > "}
 					</li>
 				))}
 			</ol>
