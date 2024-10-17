@@ -6,7 +6,7 @@ import Image from "next/image";
 import BigForm from "../../../../components/BigForm/index";
 import ClientPopup from "../../../../components/PopUp/index";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "../../../../components/Breadcrumbs";
+import Breadcrumbs from "../../../../components/BreadCrumbs";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({ params }) {

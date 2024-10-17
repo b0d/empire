@@ -4,7 +4,7 @@ import Image from "next/image";
 import Header from "../../../../components/Header/index";
 import Footer from "../../../../components/Footer/index";
 import BigForm from "../../../../components/BigForm/index";
-import Breadcrumbs from "../../../../components/Breadcrumbs";
+import Breadcrumbs from "../../../../components/BreadCrumbs";
 import { useTranslations } from "next-intl";
 import sanitizeHtml from "sanitize-html";
 import { unstable_setRequestLocale } from "next-intl/server";
