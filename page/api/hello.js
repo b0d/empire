@@ -1,0 +1,1 @@
+https://empire-massage.lviv.ua/wp-json/wp/v2/posts
