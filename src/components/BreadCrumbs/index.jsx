@@ -1,13 +1,9 @@
 "use client";
 import "./index.css";
-///import Link from "next/link";
-///import { usePathname } from "next/navigation";
-///import { useTranslations } from "next-intl";
-export default function BreadCrumbs() {
-	<p>sss</p>;
-}
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
-/*
 export default function Breadcrumbs({ getcontent, sendt }) {
 	const pathname = usePathname();
 	const z = useTranslations("HomePage");
@@ -52,7 +48,7 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 				{breadcrumbs.map((crumb, index) => (
 					<li key={index} className='breadcrumb-item'>
 						<Link href={crumb.href}>{crumb.label}</Link>
-					
+
 						{index < breadcrumbs.length - 1}
 					</li>
 				))}
@@ -60,4 +56,3 @@ export default function Breadcrumbs({ getcontent, sendt }) {
 		</nav>
 	);
 }
-*/
