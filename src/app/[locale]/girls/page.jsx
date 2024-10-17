@@ -5,7 +5,7 @@ import Header from "../../../components/Header/index";
 import Footer from "../../../components/Footer/index";
 import BigForm from "../../../components/BigForm/index";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "../../../components/BreadCrumbs";
+import BreadCrumbs from "../../../components/BreadCrumbs";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({ params }) {
@@ -32,7 +32,7 @@ export default function LadiesPage({ params: { locale } }) {
 		<div>
 			<Header />
 			<div className='col-12'>
-				<Breadcrumbs getcontent='Ladies' sendt={z("Ladies.ladiesGroupName")} />
+				<BreadCrumbs getcontent='Ladies' sendt={z("Ladies.ladiesGroupName")} />
 			</div>
 			<Ladies />
 			<BigForm />

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Header from "../../../../components/Header/index";
 import Footer from "../../../../components/Footer/index";
 import BigForm from "../../../../components/BigForm/index";
-import Breadcrumbs from "../../../../components/BreadCrumbs";
+import BreadCrumbs from "../../../../components/BreadCrumbs";
 import { useTranslations } from "next-intl";
 import sanitizeHtml from "sanitize-html";
 import { unstable_setRequestLocale } from "next-intl/server";
@@ -58,7 +58,7 @@ export default function Blog15({ params: { locale } }) {
 	return (
 		<div>
 			<Header />
-			<Breadcrumbs getcontent={t("beforeModelName")} sendt={t("mainh1")} />
+			<BreadCrumbs getcontent={t("beforeModelName")} sendt={t("mainh1")} />
 			<section className='container'>
 				<h1>{t("mainh1")}</h1>
 				<div className='col-12'>

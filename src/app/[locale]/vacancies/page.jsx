@@ -5,7 +5,7 @@ import Image from "next/image";
 import BigForm from "../../../components/BigForm/index";
 import sanitizeHtml from "sanitize-html";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "../../../components/BreadCrumbs";
+import BreadCrumbs from "../../../components/BreadCrumbs";
 import { unstable_setRequestLocale } from "next-intl/server";
 export async function generateMetadata({ params }) {
 	const locale = params.locale || "ru";
@@ -32,7 +32,7 @@ export default function Vacancies({ params: { locale } }) {
 		<div className='vacancies'>
 			<Header />
 			<div className='col-12'>
-				<Breadcrumbs getcontent='Vacancies' sendt={t("title")} />
+				<BreadCrumbs getcontent='Vacancies' sendt={t("title")} />
 			</div>
 			<h1 className='h2-title'>{t("mainh1")}</h1>
 			<div className='container page-description'>

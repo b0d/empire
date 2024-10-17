@@ -5,7 +5,7 @@ import Header from "../../../components/Header/index";
 import Footer from "../../../components/Footer/index";
 import BigForm from "../../../components/BigForm/index";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "../../../components/BreadCrumbs";
+import BreadCrumbs from "../../../components/BreadCrumbs";
 import { unstable_setRequestLocale } from "next-intl/server";
 export async function generateMetadata({ params }) {
 	const locale = params.locale || "ru";
@@ -54,7 +54,7 @@ export default function Blog({ params: { locale } }) {
 		<section>
 			<Header />
 			<div className='col-12'>
-				<Breadcrumbs getcontent='Blog' sendt={z("beforeModelName")} />
+				<BreadCrumbs getcontent='Blog' sendt={z("beforeModelName")} />
 			</div>
 			<div className='container'>
 				<div className='col-12'>

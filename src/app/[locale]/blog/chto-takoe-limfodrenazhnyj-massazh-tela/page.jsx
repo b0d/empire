@@ -5,7 +5,7 @@ import Header from "../../../../components/Header/index";
 import Footer from "../../../../components/Footer/index";
 import BigForm from "../../../../components/BigForm/index";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "../../../../components/BreadCrumbs";
+import BreadCrumbs from "../../../../components/BreadCrumbs";
 import sanitizeHtml from "sanitize-html";
 import { unstable_setRequestLocale } from "next-intl/server";
 export async function generateMetadata({ params }) {
@@ -48,7 +48,7 @@ export default function Blog16({ params: { locale } }) {
 	return (
 		<div>
 			<Header />
-			<Breadcrumbs getcontent={t("beforeModelName")} sendt={t("mainh1")} />
+			<BreadCrumbs getcontent={t("beforeModelName")} sendt={t("mainh1")} />
 			<section className='container'>
 				<h1>{t("mainh1")}</h1>
 				<div className='col-12'>

@@ -6,7 +6,7 @@ import Image from "next/image";
 import BigForm from "../../../../components/BigForm/index";
 import ClientPopup from "../../../../components/PopUp/index";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "../../../../components/BreadCrumbs";
+import BreadCrumbs from "../../../../components/BreadCrumbs";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({ params }) {
@@ -35,7 +35,7 @@ export default function Emma({ params: { locale } }) {
 		<section>
 			<Header />
 			<div className='col-12'>
-				<Breadcrumbs getcontent={s("beforeModelName")} sendt={t} />
+				<BreadCrumbs getcontent={s("beforeModelName")} sendt={t} />
 			</div>
 			<div className='x'>
 				<div className='h2-title'>
