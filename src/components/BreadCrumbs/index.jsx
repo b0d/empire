@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-export default function Breadcrumbs({ getcontent, sendt }) {
+export default function BreadCrumbs({ getcontent, sendt }) {
 	const pathname = usePathname();
 	const z = useTranslations("HomePage");
 	const p = useTranslations("Header");

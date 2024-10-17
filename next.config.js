@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
 
     //  trailingSlash: true,
-    //output: 'export',
+    output: 'export',
     images: {
         unoptimized: true,
     },
@@ -14,4 +14,4 @@ const nextConfig = {
 
 
 
-export default withNextIntl(nextConfig);
+export default withNextIntl(nextConfig); 

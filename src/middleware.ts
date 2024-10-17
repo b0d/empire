@@ -11,6 +11,11 @@ export default function middleware(request: NextRequest, response: NextResponse)
         pathnames,
     });
 
+
+
+    console.log(`Requested URL: ${request.url}`);
+    const responses = handleI18nRouting(request);
+    console.log(`Redirecting to: ${responses.headers.get('location')}`);
     return handleI18nRouting(request);
 }
 

@@ -9,5 +9,5 @@ export const pathnames: Pathnames<typeof locales> = {
     "/": "/",
 };
 
-export const localePrefix = "as-needed" satisfies
+export const localePrefix = "always" satisfies
     LocalePrefix;
