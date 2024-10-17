@@ -3,7 +3,7 @@ import "./index.css";
 ///import Link from "next/link";
 ///import { usePathname } from "next/navigation";
 ///import { useTranslations } from "next-intl";
-export default function Breadcrumbs() {
+export default function BreadCrumbs() {
 	<p>sss</p>;
 }
 
