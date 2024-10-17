@@ -19,8 +19,7 @@ export async function generateMetadata({ params }) {
 	};
 }
 export async function generateStaticParams() {
-	const locales = ["uk", "en", "ru"]; // List of locales you want to support
-
+	const locales = ["uk", "en", "ru"];
 	return locales.map((locale) => ({
 		locale, // Return an object for each dynamic path
 	}));
